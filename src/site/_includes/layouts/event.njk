@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+pageClass: event
+templateEngineOverride: njk, md
+---
+
+{% set gig = page %}
+{% include 'gigSummary.njk' %}
+
+<main>
+  {{ content | safe }}
+</main>

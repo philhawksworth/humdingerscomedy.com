@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_fonts';
 @import '_mixins';
 
 * {
@@ -6,59 +7,126 @@
   padding: 0;
 }
 
-
 ::-moz-selection {
-  background-color: $accent-color;
+  background-color: $text-color;
   color: $page-color;
 }
 ::selection {
-  background-color: $accent-color;
+  background-color: $text-color;
   color: $page-color;
 }
 
 html {
-  background-color: $accent-color;
+  background-color: $page-color;
 }
 
 body {
   text-align: center;
-  background-color: $page-color;
+  width: 100%;
   color: mix($text-color, $page-color, 80%);
   font-family: sans-serif;
   font-weight: 30;
   font-size: 16px;
   line-height: 1.8;
+  background-color: $page-color;
+  background-image: url('/images/red-curtain-fade.jpg');
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-position-x: center;
+  background-size: 200%;
+  z-index: 0;
+  @include bp(narrow) {
+    background-size: 180%;
+    font-size: 17px;
+  }
   @include bp(mid) {
+    background-size: 120%;
     font-size: 18px;
   }
+  @include bp(wide) {
+    background-size: 100%;
+  }
+
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
   width: 90%;
-  text-align: left;
   @include bp(mid) {
     width: 600px;
   }
   @include bp(wide) {
-    width: 700px;
+    width: 900px;
   }
 }
 
+header,
+footer {
+  .container {
+    text-align: center;
+  }
+}
+.content {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+
+a:link,
+a:visited {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: solid 0.1em mix($text-color, $page-color, 90%);
+}
+a:hover,
+a:focus {
+  color: $text-color;
+  border-bottom: solid 0.1em $text-color;
+}
+
+
+h1 {
+  a:link,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  a:hover,
+  a:focus {
+    color: $text-color;
+    border-bottom-style: none;
+  }
+}
 
 h1, h2, h3 {
   color: $text-color;
   font-weight: 600;
-  margin-top:2.5em;
+  margin-top:0em;
+  padding-top: 1em;
   margin-bottom:1em;
   line-height: 1em;
+  font-family: 'league_gothicregular';
+  text-transform: uppercase;
+  font-weight: normal;
 }
-h1 {
-  margin-top:0.4em;
-  font-size: 4em;
-  line-height: 0.9em;
 
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  line-height: 0.9em;
+  margin-bottom:0em;
+  padding-top: 0.5em;
+  padding-bottom:0em;
+  border-bottom-style: solid;
+  border-bottom-color: #fff;;
+  border-bottom-width: 0.1em;
+
+  @include bp(narrow) {
+    font-size: 4em;
+  }
   @include bp(mid) {
     font-size: 5em;
   }
@@ -68,100 +136,218 @@ h1 {
 }
 
 
+h2 {
+  font-size: 2em;
+  @include bp(mid) {
+    font-size: 2.6em;
+  }
+}
+h3 {
+  font-size: 1.4em;
+  @include bp(mid) {
+    font-size: 1.6em;
+  }
+}
+
+
 p {
   margin-bottom: 1em;
 }
 
-.subtitle {
-  margin-top: -3em;
-  margin-bottom: 6em;
+p.subtitle {
+  font-size: 1.2em;
+  margin-top: 1em;
+  line-height: 1.2;
 }
+
+p.date {
+  font-size: 1.2em;
+  color: $text-color;
+}
+
+p.stamp {
+  margin-top:0;
+  margin-bottom:0;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  font-family: 'league_gothicregular';
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size:1.4em;
+  color: $text-color;
+  text-transform: uppercase;
+  border-width: 0.2em;
+  border-color: $text-color;
+  border-style: solid;
+  border-radius: 0.4em;
+  opacity: 0.7;
+  transform: rotate(-10deg);
+}
+
 
 ul, ol {
   padding-left: 1em;
 }
 
-a:link,
-a:visited {
-  color: $accent-color;
-  text-decoration: none;
-  border-bottom: solid 1px mix($text-color, $page-color, 10%);
-}
-a:hover,
-a:focus {
-  color: $text-color;
-  border-bottom: solid 1px $accent-color;
-}
+img.logo-mic {
+  width: 3em;
+  margin-bottom: -1.1em;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
 
+  @include bp(mid) {
+    width: 4em;
+    display: inline-block;
+  }
+
+  @include bp(wide) {
+    margin-bottom: -1.3em;
+    width: 5em;
+  }
+}
 
 
 .nav {
-  padding-top: 3em;
-
+  padding-top:2em;
+  padding-bottom:2em;
+  @include bp(mid) {
+    padding-bottom:1em;
+  }
   li {
     display: inline;
   }
-
   a:link,
   a:visited {
     display: inline-block;
-    border-top: solid 1px mix($text-color,$page-color, 60%);
     border-bottom-style: none;
-    padding-top: 0.8em;
-    padding-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0.7em;
-    width: 8em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     text-align: left;
     color: mix($text-color,$page-color, 80%);
     text-decoration: none;
   }
   a:hover,
   a:focus {
-      color: $text-color;
-      border-top: solid 1px $accent-color;
-      border-bottom-style: none;
+    color: $text-color;
+  }
+}
+
+.gig-summary {
+
+  h2 {
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:0.4em;
   }
 
-  small {
+  .act {
+    display: inline-block;
+    text-align: center;
+  }
+  .act-2,
+  .act-3 {
+    width: 49%;
+    margin-top: -10em;
+  }
+  .act-2 {
+    margin-left:0;
+  }
+  .act-3 {
+    margin-right:0;
+  }
+
+  .opener {
     display: block;
-    font-size: 0.7em;
-    color: mix($text-color,$page-color, 60%);
   }
-}
-
-
-code {
-  font-size: 0.8em;
-  background-color:  mix($accent-color, $page-color, 10%);
-  color: $text-color;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-pre {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  line-height: 1.2;
-  background-color:  mix($accent-color, $page-color, 10%);
-  border: solid 1px mix($accent-color, $page-color, 30%);
-  overflow: auto;
-  code {
-    border-style: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+  .headliner {
+    display: block;
+    margin-top: -2em;
   }
+
+
+
+  h3.act-name {
+    display: inline-block;
+    background-color: $text-color;
+    color: $page-color;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    font-family: 'league_gothicregular';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size:1.4em;
+    text-transform: uppercase;
+    border-radius: 0.2em;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 100px;
+    border-radius: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: $text-color;
+  }
+  .opener {
+    img {
+      width: 140px;
+    }
+  }
+  .headliner {
+    img {
+      width: 200px;
+    }
+  }
+
 }
 
 
+a.btn {
+
+  font-family: 'league_gothicregular';
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.4em;
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    background-color: $text-color;
+    color: $page-color;
+    border-radius: 0.2em;
+    // box-shadow: 0 0 4px 3px rgba(255,255,255, 0.4);
+    box-shadow: 0 0 16px 6px rgba(255,255,255, 0.4);
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #111;
+  }
+
+  &:hover,
+  &:focus {
+    // margin-top: 0.8em;
+    box-shadow: 0 0 22px 8px rgba(255,255,255, 0.4);
+    border-top: solid 0px #fff;
+    border-bottom: solid 2px #111;
+  }
+
+
+}
 
 
 
@@ -169,7 +355,6 @@ footer {
   margin-top: 6em;
   padding-top: 4em;
   padding-bottom: 6em;
-  border-top: solid 1px mix($text-color, $page-color, 10%);
   font-size: 0.7em;
   color: mix($text-color, $page-color, 40%);
 
@@ -184,3 +369,18 @@ footer {
     border-bottom: solid 1px $text-color;
   }
 }
+
+
+// body::after {
+//   z-index:1;
+//   background-color: #992222;
+//   mix-blend-mode: hard-light;
+// }
+
+
+// div.filter {
+//   background: linear-gradient(to left, red blue);
+//   // mix-blend-mode: color;
+//   // mix-blend-mode: soft-light;
+// }
+

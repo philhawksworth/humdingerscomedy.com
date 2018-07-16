@@ -1,0 +1,5 @@
+{
+  "layout" : "layouts/event.njk",
+  "tags" : "show",
+  "templateEngineOverride": "njk,md"
+}

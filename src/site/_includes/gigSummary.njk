@@ -1,0 +1,24 @@
+
+  <div class="gig-summary">
+    {# <p class="stamp stamp-when">{{ gig.date | dateDisplay }}</p> #}
+    <h2><a href="{{ gig.url }}">{{ gig.data.title}}</a></h2>
+    <p class="date">8pm, {{ gig.date | dateDisplay }}</p>
+    {% if gig.data.soldout == true %}
+    <p class="stamp stamp-sold-out">Sold out</p>
+    {% else %}
+    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    {% endif %}
+
+    <div class="acts">
+    {% for act in gig.data.acts %}
+      {% set actClass = "act-" + loop.index %}
+      {% if loop.first %}{% set actClass = "opener" %}{% endif %}
+      {% if loop.last %}{% set actClass = "headliner" %}{% endif %}
+      <div class="act {{ actClass }}">
+        <img src="images/acts/{{ act.image }}" />
+        <h3 class="act-name">{{ act.name }}</h3>
+      </div>
+    {% endfor %}
+    </div>
+
+  </div>

@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Humdingers Conmdy presents...
+---
+
+{% for gig in collections.show | reverse %}
+  {% if loop.first %}
+  <p class="stamp">Coming up</p>
+  {% endif %}
+  <h2><a href="{{ gig.url }}">{{ gig.data.title}}</a></h2>
+  <p class="date">{{ gig.date | dateDisplay }}</p>
+  {% if loop.first %}
+  <h2>Memory lane</h2>
+  {% endif %}
+{% endfor %}
+
+
+

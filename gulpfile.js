@@ -21,8 +21,7 @@ gulp.task('generate', shell.task('eleventy'));
 */
 gulp.task('assets', gulp.parallel(
   'images',
-  'styles',
-  'scripts'
+  'styles'
 ));
 
 
