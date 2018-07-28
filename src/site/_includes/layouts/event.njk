@@ -31,6 +31,12 @@ templateEngineOverride: njk, md
     {% endfor %}
     </div>
   </div>
+    {% if soldout == true %}
+    <p class="stamp stamp-sold-out">Sold out</p>
+    {% else %}
+    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    {% endif %}
+
 <div class="section">
   {{ content | safe }}
 </div>
