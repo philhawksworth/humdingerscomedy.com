@@ -1,5 +1,5 @@
 ---
-title: Opening night
+title: Opening night with Hal Cruttenden
 date: 2018-05-23
 soldout: true
 mc:

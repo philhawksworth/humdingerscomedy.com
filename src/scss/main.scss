@@ -68,11 +68,17 @@ footer {
     text-align: center;
   }
 }
-.content {
-  padding-top: 3em;
-  padding-bottom: 3em;
+header {
+  margin-bottom: 3em;
 }
 
+.content {
+  @include bp(wide) {
+    margin-left:auto;
+    margin-right:auto;
+    width: 700px;
+  }
+}
 .section {
   margin-bottom: 4em;
 }
