@@ -1,0 +1,12 @@
+
+  <div class="act {{ actClass }}">
+    {% if actClass == "headliner" %}
+    <p class="stamp stamp-act-label">Featuring</p>
+    {% elseif actClass == "opener"  %}
+    <p class="stamp stamp-act-label">With support from</p>
+    {# {% else %}
+    <p class="stamp stamp-act-label">and</p> #}
+    {% endif %}
+    <img src="/images/acts/{{ act.image }}" />
+    <h3 class="act-name">{{ act.name }}</h3>
+  </div>

@@ -3,16 +3,18 @@ layout: layouts/base.njk
 title: Humdingers Conmdy presents...
 ---
 
+<div class="section">
 {% for gig in collections.show | reverse %}
   {% if loop.first %}
-  <p class="stamp">Coming up</p>
+  <h2 class="stamp">Coming up</h2>
   {% endif %}
+  <p class="date">8pm, {{ gig.date | dateDisplay }}</p>
   <h2><a href="{{ gig.url }}">{{ gig.data.title}}</a></h2>
-  <p class="date">{{ gig.date | dateDisplay }}</p>
   {% if loop.first %}
-  <h2>Memory lane</h2>
+</div>
+<div class="section">
+  <h2 class="stamp">Memory lane</h2>
   {% endif %}
 {% endfor %}
-
-
+</div>
 

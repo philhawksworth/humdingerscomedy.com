@@ -1,5 +1,5 @@
 ---
-title: Comedy from the Abbey Theatre
+title: Ivo Graham and friends
 date: 2018-09-23
 soldout: false
 mc:
@@ -7,24 +7,21 @@ mc:
   url: https://twitter.com/leewilsoncomedy
 acts:
   -
-    name: Glen Moore
-    image: glen-moore.jpg
-    url: https://twitter.com/masud
+    name: TBA
+    image: mystery.jpg
   -
-    name: Jamie D'Souza
-    image: jamie-dsouza.jpg
-    url: https://twitter.com/masud
+    name: TBA
+    image: mystery.jpg
   -
-    name: Hannah Silvester
-    image: hannah-silvester.jpg
-    url: https://twitter.com/hal
+    name: TBA
+    image: mystery.jpg
   -
-    name: Pat Cahill
-    image: pat-cahill.jpg
-    url: https://twitter.com/hal
+    name: Ivo Graham
+    image: ivo-graham.jpg
+    url: https://twitter.com/IvoGraham
 ---
 
-Building on the momentum of our opening night, this, our second night of humdinging comedy looks to be another great nifht.
+Building on the momentum of our [opening night](/shows/opening-night), this, our second night of Humdingers Comedy, looks to be another great night.
 
 Limited tickets available for this event, so don't delay.
 

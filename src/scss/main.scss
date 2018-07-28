@@ -23,7 +23,7 @@ html {
 body {
   text-align: center;
   width: 100%;
-  color: mix($text-color, $page-color, 80%);
+  color: mix($text-color, $page-color, 90%);
   font-family: sans-serif;
   font-weight: 30;
   font-size: 16px;
@@ -73,6 +73,9 @@ footer {
   padding-bottom: 3em;
 }
 
+.section {
+  margin-bottom: 6em;
+}
 
 a:link,
 a:visited {
@@ -105,7 +108,6 @@ h1, h2, h3 {
   color: $text-color;
   font-weight: 600;
   margin-top:0em;
-  padding-top: 1em;
   margin-bottom:1em;
   line-height: 1em;
   font-family: 'league_gothicregular';
@@ -118,7 +120,6 @@ h1 {
   font-size: 3em;
   line-height: 0.9em;
   margin-bottom:0em;
-  padding-top: 0.5em;
   padding-bottom:0em;
   border-bottom-style: solid;
   border-bottom-color: #fff;;
@@ -135,7 +136,6 @@ h1 {
   }
 }
 
-
 h2 {
   font-size: 2em;
   @include bp(mid) {
@@ -143,9 +143,9 @@ h2 {
   }
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   @include bp(mid) {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 }
 
@@ -155,22 +155,21 @@ p {
 }
 
 p.subtitle {
-  font-size: 1.2em;
   margin-top: 1em;
   line-height: 1.2;
 }
 
 p.date {
-  font-size: 1.2em;
+  font-size: 1em;
   color: $text-color;
+  margin-bottom: 0em;
 }
 
-p.stamp {
-  margin-top:0;
-  margin-bottom:0;
+.stamp {
   display: inline-block;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  margin-bottom:1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   padding-left: 0.6em;
   padding-right: 0.6em;
   font-family: 'league_gothicregular';
@@ -183,10 +182,18 @@ p.stamp {
   border-color: $text-color;
   border-style: solid;
   border-radius: 0.4em;
-  opacity: 0.7;
+  opacity: 0.9;
   transform: rotate(-10deg);
+  line-height: 1;
 }
 
+.stamp-act-label {
+  margin-bottom: -0.3em;
+}
+
+.stamp-sold-out {
+  font-size: 3em;
+}
 
 ul, ol {
   padding-left: 1em;
@@ -194,16 +201,15 @@ ul, ol {
 
 img.logo-mic {
   width: 3em;
-  margin-bottom: -1.1em;
+  margin-bottom: 0.4em;
   display: block;
   margin-left:auto;
   margin-right:auto;
-
   @include bp(mid) {
+    margin-bottom: -1.1em;
     width: 4em;
     display: inline-block;
   }
-
   @include bp(wide) {
     margin-bottom: -1.3em;
     width: 5em;
@@ -211,11 +217,22 @@ img.logo-mic {
 }
 
 
+.wordmark {
+  margin-top: 3em;
+  display: inline-block;
+  z-index: 1;
+}
+
+
 .nav {
-  padding-top:2em;
-  padding-bottom:2em;
+  margin-bottom: 2em;
+  z-index: 2;
   @include bp(mid) {
-    padding-bottom:1em;
+    margin-bottom: -2.5em;
+  }
+  @include bp(wide) {
+    margin-bottom: -3.5em;
+    margin-top: 1em;
   }
   li {
     display: inline;
@@ -224,41 +241,56 @@ img.logo-mic {
   a:visited {
     display: inline-block;
     border-bottom-style: none;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.8;
     text-align: left;
-    color: mix($text-color,$page-color, 80%);
+    color: mix($text-color,$page-color, 100%);
     text-decoration: none;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   a:hover,
   a:focus {
-    color: $text-color;
+    color: $page-color;
+    background-color: #fff;
+
   }
 }
 
 .gig-summary {
 
   h2 {
-    margin-top:0;
-    margin-bottom:0;
+    margin-bottom:2em;
     padding-top:0;
-    padding-bottom:0.4em;
   }
 
   .act {
-    display: inline-block;
+    display: block;
     text-align: center;
+    @include bp(mid) {
+      display: inline-block;
+    }
   }
   .act-2,
   .act-3 {
-    width: 49%;
-    margin-top: -10em;
+    @include bp(mid) {
+      width: 49%;
+      margin-top: -10em;
+      display: inline-block;
+    }
   }
   .act-2 {
-    margin-left:0;
+    @include bp(mid) {
+      margin-left:0;
+    }
   }
   .act-3 {
-    margin-right:0;
+    @include bp(mid) {
+      margin-right:0;
+    }
   }
 
   .opener {
@@ -267,9 +299,8 @@ img.logo-mic {
   .headliner {
     display: block;
     margin-top: -2em;
+    margin-bottom: 2em;
   }
-
-
 
   h3.act-name {
     display: inline-block;
@@ -365,22 +396,9 @@ footer {
   }
   a:hover,
   a:focus {
-    color: $accent-color;
+    color: $text-color;
     border-bottom: solid 1px $text-color;
   }
 }
 
-
-// body::after {
-//   z-index:1;
-//   background-color: #992222;
-//   mix-blend-mode: hard-light;
-// }
-
-
-// div.filter {
-//   background: linear-gradient(to left, red blue);
-//   // mix-blend-mode: color;
-//   // mix-blend-mode: soft-light;
-// }
 

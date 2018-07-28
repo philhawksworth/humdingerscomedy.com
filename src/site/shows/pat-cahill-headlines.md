@@ -8,7 +8,7 @@ mc:
 acts:
   -
     name: Glen Moore
-    image: glem-moore.jpg
+    image: glen-moore.jpg
     url: https://twitter.com/masud
   -
     name: Jamie D'Souza
@@ -24,7 +24,7 @@ acts:
     url: https://twitter.com/hal
 ---
 
-Building on the momentum of our opening night, this, our second night of humdinging comedy looks to be another great nifht.
+Building on the momentum of our opening night, this, our second night of humdinging comedy looks to be another great night.
 
 Limited tickets available for this event, so don't delay.
 

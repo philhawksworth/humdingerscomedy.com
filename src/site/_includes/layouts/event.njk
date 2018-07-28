@@ -3,10 +3,49 @@ layout: layouts/base.njk
 pageClass: event
 templateEngineOverride: njk, md
 ---
+  <div class="gig-summary section">
+    {% if soldout == true %}
+    <p class="stamp stamp-sold-out">Sold out</p>
+    {% else %}
+    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    {% endif %}
+    <p class="date">8pm, {{ date | dateDisplay }}</p>
+    <h2>{{ title}}</h2>
+    <div class="acts">
+    {# headliner act #}
+    {% set act = acts[acts.length-1] %}
+    {% set actClass = "headliner" %}
+    {% include "act.njk" %}
 
-{% set gig = page %}
-{% include 'gigSummary.njk' %}
+    {# opening act #}
+    {% set act = acts[0] %}
+    {% set actClass = "opener" %}
+    {% include "act.njk" %}
 
-<main>
+    {# supporting acts #}
+    {% for act in acts  %}
+      {% if not loop.first and not loop.last %}
+        {% set actClass = "act-" + loop.index %}
+        {% include "act.njk" %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+<div class="section">
   {{ content | safe }}
-</main>
+</div>
+<div class="section">
+  <h2>Your night at Humdingers Comedy</h2>
+  <p>
+    Fully licensed bar, severing before and after the show, and during the interval.
+  </p>
+  <p>
+    Bar open from 7pm. Doors open at 7:30pm. Show begins at 8pm. <br /> Late arrival may not be admitted during the acts.
+  </p>
+  <p>
+    Running time approx 2hrs 30 minutes, including a 30 minute interval.
+  </p>
+  <p>
+    On site parking available.
+  </p>
+</div>
