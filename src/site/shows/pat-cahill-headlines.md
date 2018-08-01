@@ -1,5 +1,6 @@
 ---
 title: Pat Cahill headlines
+permalink: the-crown/{{ title | slug }}/
 date: 2018-06-21
 soldout: true
 mc:

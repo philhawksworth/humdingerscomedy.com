@@ -1,5 +1,6 @@
 ---
 title: Ivo Graham and Support
+permalink: abbey-theatre/{{ title | slug }}/
 date: 2018-09-27
 soldout: false
 ticketLink: http://www.wegottickets.com/humdingerscomedy

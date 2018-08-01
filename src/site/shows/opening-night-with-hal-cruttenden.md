@@ -1,5 +1,6 @@
 ---
 title: Opening night with Hal Cruttenden
+permalink: the-crown/{{ title | slug }}/
 date: 2018-05-23
 soldout: true
 mc:

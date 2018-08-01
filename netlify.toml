@@ -3,8 +3,3 @@
   command = "yarn run build"
   publish = "dist"
   NODE_ENV = "8.9.0"
-
-  [[redirects]]
-   from = "/shows/abbey-theatre/*"
-   to = "/abbey-theatre/:splat"
-   status = 302
