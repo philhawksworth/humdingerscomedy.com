@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css" />
-    <title>{{ title }}</title>
+    <title>Humdingers Comedy {% if title %} - {{ title }} {% endif %}</title>
     <link rel="canonical" href="https://www.humdingerscomedy.com{{ page.url }}" />
   </head>
   <body class="{{ pageCLass }}" >
@@ -28,12 +28,12 @@
       </div>
     <footer>
       <div class="container">
-        <p>
+        {# <p>
           <a href="https://twitter.com/">Twitter</a>
           <a href="https://instagram.com/">Instagram</a>
-        </p>
+        </p> #}
         <p>
-          Humdingers Comedy Ltd, from the people who brought you <a href="https://www.comedyinthecrown.com">Comedy in The Crown</a>.
+          Humdingers Comedy is brought to you by Humdingers Comedy Ltd, the people behind <a href="https://www.comedyinthecrown.com">Comedy in The Crown</a>.
         </p>
       </div>
     </footer>

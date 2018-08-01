@@ -7,7 +7,7 @@ templateEngineOverride: njk, md
     {% if soldout == true %}
     <p class="stamp stamp-sold-out">Sold out</p>
     {% else %}
-    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    <a href="{{ ticketLink }}" target="_BLANK" rel="noopener" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
     {% endif %}
     <p class="date">8pm, {{ date | dateDisplay }}</p>
     <h2>{{ title}}</h2>
@@ -34,7 +34,7 @@ templateEngineOverride: njk, md
     {% if soldout == true %}
     <p class="stamp stamp-sold-out">Sold out</p>
     {% else %}
-    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    <a href="{{ ticketLink }}" target="_BLANK" rel="noopener" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
     {% endif %}
 
 <div class="section content">
@@ -43,7 +43,7 @@ templateEngineOverride: njk, md
 <div class="section content">
   <h2>Your night at Humdingers Comedy</h2>
   <p>
-    Fully licensed bar, severing before and after the show, and during the interval.
+    Fully licensed bar, serving before and after the show, and during the interval.
   </p>
   <p>
     Bar open from 7pm. Doors open at 7:30pm. Show begins at 8pm. <br /> Late arrival may not be admitted during the acts.
@@ -53,5 +53,8 @@ templateEngineOverride: njk, md
   </p>
   <p>
     On site parking available.
+  </p>
+  <p>
+    More information about <a href="/venue">the venue</a>.
   </p>
 </div>

@@ -24,7 +24,7 @@
     {% if gig.data.soldout == true %}
     <p class="stamp stamp-sold-out">Sold out</p>
     {% else %}
-    <a href="#" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
+    <a href="{{ gig.data.ticketLink }}" target="_BLANK" rel="noopener" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
     {% endif %}
     <div>
       <a href="{{ gig.url }}">More details</a> about this gig
