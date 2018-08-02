@@ -25,7 +25,7 @@ acts:
 
 We are delighted to be able to welcome this wonderful lineup to Humdingers Comedy. Featuring some of our own firm favourites, we know that together, they will deliver a superb night of comedy.
 
-This is also a special night for us we we move to a wonderful new venue at The Abbey Theatre, St Albans.
+This is also a special night for us we move to a wonderful new venue at The Abbey Theatre, St Albans.
 
 Come and join us as we settle in to our new home, and share some laughs with this exceptional line up.
 

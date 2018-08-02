@@ -25,7 +25,7 @@ acts:
     url: https://twitter.com/hal
 ---
 
-For our opening night at Humdingers, we've got a very special surprise. Not only will you get comedy from _three_ rising starts, but also a surprise headliner who's name we need to keep quiet for the moment. Trust us though, this is somebody you'll know. Somebody you'll not want to miss.
+For our opening night at Humdingers, we've got a very special surprise. Not only will you get comedy from _three_ rising stars, but also a surprise headliner who's name we need to keep quiet for the moment. Trust us though, this is somebody you'll know. Somebody you'll not want to miss.
 
 Update: Excited to finally reveal that our surprise headliner will be Hal Cruttenden!
 
