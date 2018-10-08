@@ -5,7 +5,7 @@ layout: layouts/base.njk
 
 ## The Abbey Theatre, St Albans
 
-![The Studio](/images/studio-1.jpg)
+<img class="border" src="/images/abbey-empty-stage-wide.jpg" alt="The Abbey Theatre Studio">
 
 <address>
 Abbey Theatre<br/>
