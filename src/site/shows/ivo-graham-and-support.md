@@ -2,7 +2,7 @@
 title: Ivo Graham and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2018-09-27
-soldout: false
+soldout: true
 ticketLink: http://www.wegottickets.com/event/446405
 mc:
   name: Phil Hawksworth
