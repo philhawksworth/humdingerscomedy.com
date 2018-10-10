@@ -12,11 +12,11 @@ acts:
     name: Jenny Collier
     image: jenny-collier.jpg
   -
+    name: Sara Barron
+    image: sara-barron.jpg
+  -
     name: Ross Smith
     image: ross-smith.jpg
-  -
-    name: TBA
-    image: mystery.jpg
   -
     name: Carey Marx
     image: carey-marx.jpg
