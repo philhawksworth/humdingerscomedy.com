@@ -118,8 +118,8 @@ h1 {
 h1, h2, h3 {
   color: $text-color;
   font-weight: 600;
-  margin-top:0em;
-  margin-bottom:1em;
+  margin-top:1.6em;
+  margin-bottom:0.6em;
   line-height: 1em;
   font-family: 'league_gothicregular';
   text-transform: uppercase;
@@ -130,6 +130,7 @@ h1 {
   display: inline-block;
   font-size: 3em;
   line-height: 0.9em;
+  margin-top:0em;
   margin-bottom:0em;
   padding-bottom:0em;
   border-bottom-style: solid;
@@ -159,6 +160,12 @@ h3 {
     font-size: 1.8em;
   }
 }
+
+h2.gig-title {
+  margin-top:0;
+  margin-bottom:0.8em;
+}
+
 
 
 p {
@@ -370,7 +377,8 @@ img.logo-mic {
 }
 
 
-a.btn {
+a.btn,
+button {
 
   font-family: 'league_gothicregular';
   text-transform: uppercase;
@@ -426,6 +434,68 @@ footer {
     color: $text-color;
     border-bottom: solid 1px $text-color;
   }
+}
+
+form {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #000;
+  font-size: 1.3em;
+
+  @include bp(mid) {
+    width: 60%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .honey {
+    visibility: hidden;
+    display: none;
+  }
+
+  h2 {
+    color: #000;
+  }
+
+  label {
+    display: block;
+    margin-top: 2em;
+  }
+
+  input {
+    display: block;
+    margin-top:0.2em;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2em;
+    border: solid 3px #222;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #222;
+    padding: 0.2em 0 0.2em 0.2em;
+    width: 80%;
+  }
+
+  .aside {
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  button {
+    font-family: 'league_gothicregular';
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 4px;
+    font-size: 1.4em;
+    padding: 0.3em 3em;
+    background-color: #622;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
 }
 
 

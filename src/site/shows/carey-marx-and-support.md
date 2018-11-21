@@ -2,7 +2,7 @@
 title: Carey Marx and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2018-11-22
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/451391
 mc:
   name: Lee Wilson

@@ -30,10 +30,28 @@
       </div>
     <footer>
       <div class="container">
-        {# <p>
-          <a href="https://twitter.com/">Twitter</a>
-          <a href="https://instagram.com/">Instagram</a>
-        </p> #}
+
+        {% if title != "Thanks" %}
+        <form name="newsletter" netlify-honeypot="full-name" action="/thanks" netlify>
+          <h2>Sign up for news and events</h2>
+          <p>
+            Tired of missing your chance to get tickets? Want to get early notifications of future gig dates and line ups? Sign up to our newsletter.
+          </p>
+          <p class="aside">
+            Your email is precious. We'll take care of it and you can unsubscribe at any time. You can expect ot hear from us no more than once or twice a month.
+          </p>
+          <p class="honey">
+            <label>Your full name: <input name="full-name"></label>
+          </p>
+          <p>
+            <label for="email">Your email address: <small class="aside">(we promsie to take care of it)</small></label>
+            <input type="email" name="name" id="email">
+          </p>
+          <p>
+            <button type="submit" class="btn">Sign me up!</button>
+          </p>
+        </form>
+        {% endif %}
         <p>
           Humdingers Comedy is brought to you by Humdingers Comedy Ltd, the people behind <a href="https://www.comedyinthecrown.com">Comedy in The Crown</a>.
         </p>

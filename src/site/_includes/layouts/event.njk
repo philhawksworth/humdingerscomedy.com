@@ -10,7 +10,7 @@ templateEngineOverride: njk, md
     <a href="{{ ticketLink }}" target="_BLANK" rel="noopener" class="btn btn-tickets">Buy tickets: <span class="price">£10</span></a>
     {% endif %}
     <p class="date">8pm, {{ date | dateDisplay }}</p>
-    <h2>{{ title}}</h2>
+    <h2 class="gig-title">{{ title}}</h2>
     <div class="acts">
     {# headliner act #}
     {% set act = acts[acts.length-1] %}
