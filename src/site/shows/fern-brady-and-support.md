@@ -10,10 +10,13 @@ mc:
 acts:
   -
     name: Robin Morgan
+    image: robin-morgan.jpg
   -
     name: Heidi Regan
+    image: heidi-regan.jpg
   -
     name: Jon Long
+    image: jon-long.jpg
   -
     name: Fern Brady
     image: fern-brady.jpg
