@@ -4,10 +4,8 @@ title: Shows
 ---
 
 <div class="section">
-{% for gig in collections.show | reverse %}
-  {% if loop.first %}
   <h2 class="stamp">Coming up</h2>
-  {% endif %}
+{% for gig in collections.publishedShows | reverse %}
   <p class="date">8pm, {{ gig.date | dateDisplay }}</p>
   <h2 class="gig-title"><a href="{{ gig.url }}">{{ gig.data.title}}</a></h2>
   {% if loop.first %}

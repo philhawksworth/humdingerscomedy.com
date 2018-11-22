@@ -2,6 +2,7 @@
 title: Pat Cahill headlines
 permalink: the-crown/{{ title | slug }}/
 date: 2018-06-21
+listed: true
 soldout: true
 mc:
   name: Lee Wilson

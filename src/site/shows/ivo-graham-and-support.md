@@ -2,6 +2,7 @@
 title: Ivo Graham and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2018-09-27
+listed: true
 soldout: true
 ticketLink: http://www.wegottickets.com/event/446405
 mc:

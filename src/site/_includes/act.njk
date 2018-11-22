@@ -7,6 +7,10 @@
     {# {% else %}
     <p class="stamp stamp-act-label">and</p> #}
     {% endif %}
+    {% if act.image %}
     <img src="/images/acts/{{ act.image }}" />
+    {% else %}
+    <img src="/images/acts/mystery.jpg" />
+    {% endif  %}
     <h3 class="act-name">{{ act.name }}</h3>
   </div>

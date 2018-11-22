@@ -3,7 +3,7 @@ layout: layouts/base.njk
 pageCLass: home
 ---
 
-{% for event in collections.show | reverse %}
+{% for event in collections.publishedShows | reverse %}
   {% if loop.first %}
     {% set gig = event %}
     {% include 'gigSummary.njk' %}

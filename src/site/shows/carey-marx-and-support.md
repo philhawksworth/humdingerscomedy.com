@@ -2,11 +2,12 @@
 title: Carey Marx and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2018-11-22
+listed: true
 soldout: true
 ticketLink: https://www.wegottickets.com/event/451391
 mc:
-  name: Lee Wilson
-  url: https://twitter.com/leewilsoncomedy
+  name: Phil Hawksworth
+  url: https://twitter.com/philhawksworth
 acts:
   -
     name: Jenny Collier

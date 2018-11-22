@@ -2,6 +2,7 @@
 title: Opening night with Hal Cruttenden
 permalink: the-crown/{{ title | slug }}/
 date: 2018-05-23
+listed: true
 soldout: true
 mc:
   name: Phil Hawksworth
