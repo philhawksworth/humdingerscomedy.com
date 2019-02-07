@@ -3,7 +3,7 @@ title: Fern Brady and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-01-31
 listed: true
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/456577
 mc:
   name: Lee Wilson
