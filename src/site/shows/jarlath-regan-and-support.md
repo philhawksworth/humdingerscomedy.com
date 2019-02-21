@@ -3,7 +3,7 @@ title: Jarlath Regan and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-02-28
 listed: true
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/463080
 mc:
   name: Phil Hawksworth
