@@ -8,7 +8,6 @@ module.exports = function(config) {
   // just collect the published shows
   config.addCollection("publishedShows", function(collection) {
     return collection.getFilteredByGlob("src/site/shows/*.md").filter(function(item) {
-      console.log("listed" in item.data);
       return "listed" in item.data;
     });
   });

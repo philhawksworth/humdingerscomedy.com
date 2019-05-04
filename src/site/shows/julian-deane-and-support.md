@@ -3,7 +3,7 @@ title: Julian Deane and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-04-25
 listed: true
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/465129
 mc:
   name: Rosie Holt
