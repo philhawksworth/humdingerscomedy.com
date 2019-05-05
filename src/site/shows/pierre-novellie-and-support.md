@@ -19,7 +19,7 @@ acts:
     name: Jenny Laville
     image: jenny-laville.jpg
   -
-    name: Pierre Nolvellie
+    name: Pierre Novellie
     image: pierre-novellie.jpg
 ---
 
