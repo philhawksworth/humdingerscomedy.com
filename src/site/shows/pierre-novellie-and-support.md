@@ -3,7 +3,7 @@ title: Pierre Novellie and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-05-16
 listed: true
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/470023
 mc:
   name: Andy Gleeks
