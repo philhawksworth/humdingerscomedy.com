@@ -1,7 +1,7 @@
 ---
 title: Adam Bloom and Support
 permalink: abbey-theatre/{{ title | slug }}/
-date: 2019-08-26
+date: 2019-09-26
 listed: true
 soldout: false
 ticketLink: https://www.wegottickets.com/event/481981
