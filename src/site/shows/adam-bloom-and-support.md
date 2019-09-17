@@ -38,4 +38,4 @@ You may also have heard him on BBC Radio 4's, "The Problem with Adam Bloom" whic
 "He's been one of my favourite stand-ups for about ten years. Bloom not only has meticulous, brilliant lines, but also an intense and fragile honesty" — Ricky Gervais
 
 
-Tickets are £15 online, or £17 on the door (previous nights suggest we are unlikely to have tickets on the door... so buy your tickets early!)
+Tickets are £15 online, or £17.50 on the door (previous nights suggest we are unlikely to have tickets on the door... so buy your tickets early!)
