@@ -3,7 +3,7 @@ title: Adam Bloom and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-09-26
 listed: true
-soldout: false
+soldout: true
 ticketLink: https://www.wegottickets.com/event/481981
 mc:
   name: Phil Hawksworth
