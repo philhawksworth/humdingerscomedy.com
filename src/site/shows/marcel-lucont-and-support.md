@@ -2,8 +2,8 @@
 title: Marcel Lucont and Support
 permalink: abbey-theatre/{{ title | slug }}/
 date: 2019-11-28
-listed: false
-soldout: false
+listed: true
+soldout: true
 ticketLink: https://www.abbeytheatre.org.uk/box-office/choose-seats/?EventInstanceId=46202
 mc:
   name: Phil Hawksworth
