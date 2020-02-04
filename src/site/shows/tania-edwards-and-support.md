@@ -16,8 +16,8 @@ acts:
     name: Neil O'Rourke
     image: neil-orourke.jpg
   -
-    name: TBA
-    image: mystery.jpg
+    name: James Ellis
+    image: james-ellis.jpg
   -
     name: Tania Edwards
     image: tania-edwards.jpg
